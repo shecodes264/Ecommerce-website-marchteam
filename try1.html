@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Coders Garments - Fashion for Coders">
+    <meta name="keywords" content="coders, garments, clothing, fashion">
+    <meta name="author" content="Coders Garments">
+    <title>Coders Garments</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .header .account-info {
+            display: flex;
+            align-items: center;
+        }
+        .header .account-info img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        /* Main content styles */
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .video, .photo, .account, .products {
+            width: 22%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .video iframe, .photo img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .video h3, .photo h3, .account h3, .products h3 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .video iframe {
+            max-height: 200px;
+        }
+        .products img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        /* Account Buttons */
+        .account button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .account button:hover {
+            background-color: #0056b3;
+        }
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .video, .photo, .account, .products {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <div class="logo">Coders Garments</div>
+        <div class="account-info">
+            <img src="https://via.placeholder.com/30" alt="User Profile"> 
+            <span>My Account</span>
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+
+        <!-- Video Section -->
+        <div class="video">
+            <h3>Latest Fashion Trends</h3>
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <!-- Photo Section -->
+        <div class="photo">
+            <h3>Featured Garment</h3>
+            <img src="https://via.placeholder.com/300x200" alt="Featured Garment">
+        </div>
+
+        <!-- Account Section -->
+        <div class="account">
+            <h3>Account Settings</h3>
+            <button onclick="location.href='profile.html'">Go to Profile</button>
+            <button onclick="location.href='logout.html'">Logout</button>
+        </div>
+
+        <!-- Products Section -->
+        <div class="products">
+            <h3>Our Top Products</h3>
+            <img src="https://via.placeholder.com/300x200" alt="Product 1">
+            <p><a href="#">View Product</a></p>
+            <img src="https://via.placeholder.com/300x200" alt="Product 2">
+            <p><a href="#">View Product</a></p>
+        </div>
+        
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2025 Coders Garments. All Rights Reserved.</p>
+        <p>
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms of Service</a> |
+            <a href="#">Contact Us</a>
+        </p>
+    </div>
+
+</body>
+</html>

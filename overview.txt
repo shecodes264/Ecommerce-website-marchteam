@@ -1,0 +1,15 @@
+SPA - single page application
+more pages - multipage website
+
+website: ecommerce - clothing and apparels
+
+website name: coders garments
+universal setup for website: to make our website consistent
+primary color: #359ad7 
+secondary color: #8cfffb 
+one more color: 
+
+font family: 
+
+website model:
+product model.

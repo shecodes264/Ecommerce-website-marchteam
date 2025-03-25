@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Coders Garments - Fashion for Coders">
+    <meta name="keywords" content="coders, garments, clothing, fashion">
+    <meta name="author" content="Coders Garments">
+    <title>Coders Garments</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 20px 40px;  /* Increased padding */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .header .account-info {
+            display: flex;
+            align-items: center;
+        }
+        .header .account-info img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        
+        /* Main content styles */
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;  /* Increased padding */
+            gap: 30px;
+        }
+        .video, .photo, .account, .products {
+            width: 22%;
+            background-color: white;
+            padding: 25px;  /* Increased padding */
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .video iframe, .photo img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .video h3, .photo h3, .account h3, .products h3 {
+            text-align: center;
+            margin-bottom: 25px;  /* More space between title and content */
+        }
+        .video iframe {
+            max-height: 200px;
+        }
+        .products img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        
+        /* Account Section Styles */
+        .account {
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .account label {
+            font-size: 16px;
+            margin-bottom: 8px;
+            display: block;
+        }
+        .account input[type="text"], .account input[type="email"], .account input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .account span {
+            font-size: 14px;
+            color: #888;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .account button {
+            width: 100%;
+            padding: 12px;  /* Increased button padding */
+            margin-top: 15px;  /* Increased space above the button */
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .account button:hover {
+            background-color: #0056b3;
+        }
+        
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 30px 40px;  /* Increased padding for footer */
+            text-align: center;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Links for Navigation */
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .video, .photo, .account, .products {
+                width: 80%;
+                margin-bottom: 30px;  /* Added bottom margin for better spacing */
+            }
+            .footer {
+                padding: 20px;  /* Adjusted padding for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <div class="logo">Coders Garments</div>
+        <div class="account-info">
+            <img src="https://via.placeholder.com/30" alt="User Profile">
+            <span><a href="profile.html" class="nav-link">My Account</a></span>
+        </div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul style="display: flex; justify-content: center; background-color: #444; margin: 0;">
+            <li><a href="home.html" class="nav-link">Home</a></li>
+            <li><a href="shop.html" class="nav-link">Shop</a></li>
+            <li><a href="about.html" class="nav-link">About Us</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+
+        <!-- Video Section -->
+        <div class="video">
+            <h3>Latest Fashion Trends</h3>
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <!-- Photo Section -->
+        <div class="photo">
+            <h3>Featured Garment</h3>
+            <img src="https://via.placeholder.com/300x200" alt="Featured Garment">
+        </div>
+
+        <!-- Account Section -->
+        <div class="account">
+            <h3>Account Settings</h3>
+            <form action="#" method="POST">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username">
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+                
+                <span>By signing in, you agree to our <a href="terms.html" class="nav-link">Terms of Service</a>.</span>
+                <button type="submit">Update Profile</button>
+                <button type="button" onclick="location.href='logout.html'">Logout</button>
+            </form>
+        </div>
+
+        <!-- Products Section -->
+        <div class="products">
+            <h3>Our Top Products</h3>
+            <img src="https://via.placeholder.com/300x200" alt="Product 1">
+            <p><a href="product1.html" class="nav-link">View Product</a></p>
+            <img src="https://via.placeholder.com/300x200" alt="Product 2">
+            <p><a href="product2.html" class="nav-link">View Product</a></p>
+        </div>
+        
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2025 Coders Garments. All Rights Reserved.</p>
+        <p>
+            <a href="privacy.html" class="nav-link">Privacy Policy</a> |
+            <a href="terms.html" class="nav-link">Terms of Service</a> |
+            <a href="contact.html" class="nav-link">Contact Us</a>
+        </p>
+    </div>
+
+</body>
+</html>

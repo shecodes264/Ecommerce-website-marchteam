@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Starlight Restaurant</title>
+        <style>
+            /* General Reset */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            /* Body Styling */
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                color: #333;
+            }
+
+            /* Header */
+            header {
+                background-color: #2c3e50;
+                color: white;
+                text-align: center;
+                padding: 50px 0;
+            }
+
+            header h1 {
+                font-size: 3.5em;
+                letter-spacing: 2px;
+            }
+
+            header p {
+                font-size: 1.2em;
+                margin-top: 10px;
+                font-style: italic;
+            }
+
+            /* Navigation Bar */
+            nav {
+                background-color: #34495e;
+                padding: 15px 0;
+                text-align: center;
+            }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                padding: 12px 20px;
+                margin: 0 15px;
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+
+            nav a:hover {
+                background-color: #e74c3c;
+                border-radius: 5px;
+            }
+
+            /* Menu Section */
+            .menu {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin: 40px 10px;
+                text-align: center;
+            }
+
+            .menu-item {
+                background-color: #fff;
+                width: 250px;
+                margin: 20px;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease;
+            }
+
+            .menu-item img {
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+            }
+
+            .menu-item:hover {
+                transform: translateY(-10px);
+            }
+
+            .menu-item h3 {
+                font-size: 1.5em;
+                margin-top: 15px;
+            }
+
+            .menu-item p {
+                font-size: 1em;
+                margin: 10px 0;
+            }
+
+            .menu-item .price {
+                font-size: 1.3em;
+                color: #e74c3c;
+            }
+
+            /* About Section */
+            .about {
+                text-align: center;
+                margin: 40px 10px;
+            }
+
+            .about h2 {
+                font-size: 2.5em;
+                margin-bottom: 20px;
+            }
+
+            .about p {
+                font-size: 1.2em;
+                line-height: 1.6;
+                margin-top: 20px;
+                max-width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            /* Gallery Section */
+            .gallery {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin: 40px 10px;
+                text-align: center;
+            }
+
+            .gallery-item {
+                width: 250px;
+                height: 250px;
+                margin: 20px;
+                background-color: #e74c3c;
+                border-radius: 8px;
+                background-size: cover;
+                background-position: center;
+                transition: transform 0.3s ease;
+            }
+
+            .gallery-item:hover {
+                transform: scale(1.05);
+            }
+
+            /* Contact Section */
+            .contact {
+                text-align: center;
+                margin: 40px 10px;
+                background-color: #2c3e50;
+                color: white;
+                padding: 40px 10px;
+            }
+
+            .contact h2 {
+                font-size: 2.5em;
+                margin-bottom: 20px;
+            }
+
+            .contact p {
+                font-size: 1.2em;
+                margin: 10px 0;
+            }
+
+            .contact a {
+                color: #e74c3c;
+                text-decoration: none;
+                font-size: 1.2em;
+            }
+
+            .contact a:hover {
+                text-decoration: underline;
+            }
+
+            /* Footer */
+            footer {
+                background-color: #34495e;
+                color: white;
+                text-align: center;
+                padding: 20px 0;
+                margin-top: 40px;
+            }
+
+            footer a {
+                color: white;
+                text-decoration: none;
+                margin: 0 10px;
+                font-size: 18px;
+            }
+
+            footer a:hover {
+                text-decoration: underline;
+            }
+
+            /* Responsive Design */
+            @media screen and (max-width: 768px) {
+                .menu {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .gallery {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .menu-item,
+                .gallery-item {
+                    width: 80%;
+                }
+
+                nav a {
+                    padding: 10px 15px;
+                    font-size: 16px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- Header Section -->
+        <header>
+            <h1>Starlight Restaurant</h1>
+            <p>Experience Dining Like Never Before</p>
+        </header>
+
+        <!-- Navigation Menu -->
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">About Us</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <!-- Menu Section -->
+        <section class="menu">
+            <!-- Menu Item 1 -->
+            <div class="menu-item">
+                <img src="https://via.placeholder.com/250" alt="Dish 1">
+                <h3>Grilled Salmon</h3>
+                <p>Freshly grilled salmon with seasonal vegetables.</p>
+                <p class="price">$25.00</p>
+            </div>
+
+            <!-- Menu Item 2 -->
+            <div class="menu-item">
+                <img src="https://via.placeholder.com/250" alt="Dish 2">
+                <h3>Vegetarian Pizza</h3>
+                <p>A delicious vegetarian pizza with fresh ingredients.</p>
+                <p class="price">$15.00</p>
+            </div>
+
+            <!-- Menu Item 3 -->
+            <div class="menu-item">
+                <img src="https://via.placeholder.com/250" alt="Dish 3">
+                <h3>Chocolate Lava Cake</h3>
+                <p>Rich and decadent chocolate lava cake.</p>
+                <p class="price">$8.00</p>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="about">
+            <h2>About Us</h2>
+            <p>Welcome to Starlight Restaurant! We offer a unique dining experience that combines excellent food, cozy ambiance, and stellar service. Located in the heart of the city, Starlight is the perfect place for a romantic dinner, a family gathering, or a night out with friends.</p>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery">
+            <!-- Gallery Item 1 -->
+            <div class="gallery-item" style="background-image: url('https://via.placeholder.com/250');"></div>
+            <!-- Gallery Item 2 -->
+            <div class="gallery-item" style="background-image: url('https://via.placeholder.com/250');"></div>
+            <!-- Gallery Item 3 -->
+            <div class="gallery-item" style="background-image: url('https://via.placeholder.com/250');"></div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>Visit us at:</p>
+            <p>123 Starlight Avenue, City, Country</p>
+            <p>Phone: +123 456 7890</p>
+            <p><a href="mailto:info@starlight.com">info@starlight.com</a></p>
+        </section>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; 2025 Starlight Restaurant. All rights reserved.</p>
+            <p>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </p>
+        </footer>
+
+    </body>
+</html>

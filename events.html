@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Event handling</title>
+    </head>
+<body>
+    <h1> Event Handilng</h1>
+        <button id="button_sample"> Click or Hover over</button>
+        <p id="output"></p>
+
+        <script>
+        const event_button = document.getElementById ('button_sample');
+        const info = document.getElementById("output");
+
+         handleClick () => {
+            event_button.style.backgroundColor = "lightgreen";
+            info.textContent = "The button is clicked"
+     }    
+
+     handleMouseOver = () => {
+        event_button.style.color = "green";
+        info.textContent = "The mouse is over the button"
+     }
+
+     handleMouseOut = () => {
+        event_button.style.backgroundColor = "yellow";
+        info.textContent = "The mouse is not over the button"
+
+     }
+     // event listener   
+         event_button.addEventListener("click",handleClick)
+         event_button.addEventListener("click", handleMouseOver)
+         event_button.addEventListener("click", handleMouseOut)
+</script>
+
+</body>
+</html>
